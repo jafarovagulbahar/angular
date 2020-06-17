@@ -1,0 +1,28 @@
+<div class="container">
+  <div class="weather-bg">
+
+    <div class="location">
+      <div class="item">{{data?.location.name}},</div>
+      <div class="item">{{data?.location.region}},</div>
+      <div class="item">{{data?.location.country}}</div>
+    </div>
+
+    <div class="main-left">
+      <img src="https://assets.weatherstack.com/images/wsymbols01_png_64/wsymbol_0001_sunny.png">
+      <div class="description">{{data?.current.weather_descriptions[0]}}</div>
+
+      <div class="tempratur">{{data?.current.temperature}}</div>
+    </div>
+
+    <div class="main-right">
+      <div class="item-right"><h5>Wind:</h5>{{data?.current.wind_speed}}</div>
+      <div class="item-right"><h5>Precip:</h5>{{data?.current.precip}}</div>
+      <div class="item-right"><h5>Pressure:</h5>{{data?.current.pressure}}</div>
+    </div>
+
+
+
+  </div>
+</div>
+
+
